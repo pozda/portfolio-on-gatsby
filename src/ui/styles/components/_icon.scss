@@ -1,0 +1,40 @@
+.icon {
+  fill: $color-quinary;
+  transition: $transition--primary;
+  margin: 0 12px;
+
+  &--projects {
+    margin: 0;
+  }
+  //Social media icons
+  &.Twitter {
+    &:hover {
+      fill: $color-twitter
+    }
+  }
+  &.GitHub {
+    &:hover {
+      fill: $color-github
+    }
+  }
+  &.CodePen {
+    &:hover {
+      fill: $color-codepen
+    }
+  }
+  &.Replit {
+    &:hover {
+      fill: $color-replit
+    }
+  }
+  &.Gmail {
+    &:hover {
+      fill: $color-gmail
+    }
+  }
+  &.LinkedIn {
+    &:hover {
+      fill: $color-linkedin
+    }
+  }
+}

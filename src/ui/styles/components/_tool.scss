@@ -1,0 +1,85 @@
+.tool {
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  box-sizing: border-box;
+  &__name {
+    margin: 0;
+  }
+  //Tool icons
+  &.javascript {
+    &:hover .icon {
+      fill: $color-javascript
+    }
+  }
+  &.typescript {
+    &:hover .icon {
+      fill: $color-typescript
+    }
+  }
+  &.html5 {
+    &:hover .icon {
+      fill: $color-html5
+    }
+  }
+  &.css3 {
+    &:hover .icon {
+      fill: $color-css3
+    }
+  }
+  &.git {
+    &:hover .icon {
+      fill: $color-git
+    }
+  }
+  &.webpack {
+    &:hover .icon {
+      fill: $color-webpack
+    }
+  }
+  &.gulp {
+    &:hover .icon {
+      fill: $color-gulp
+    }
+  }
+  &.react {
+    &:hover .icon {
+      fill: $color-react
+    }
+  }
+  &.angularjs {
+    &:hover .icon {
+      fill: $color-angularjs
+    }
+  }
+  &.vue {
+    &:hover .icon {
+      fill: $color-vue
+    }
+  }
+  &.travis {
+    &:hover .icon {
+      fill: $color-travis
+    }
+  }
+  &.mongo {
+    &:hover .icon {
+      fill: $color-mongo
+    }
+  }
+  &.jest {
+    &:hover .icon {
+      fill: $color-jest
+    }
+  }
+  &.nodejs {
+    &:hover .icon {
+      fill: $color-nodejs
+    }
+  }
+  &.buttercms {
+    &:hover .icon {
+      fill: $color-butterCMS
+    }
+  }
+}

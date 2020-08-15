@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: calc(100vh - 20px);
+  font-family: $font--text;
+  background: white;
+  color: $color-primary;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font--title;
+  font-weight: $font-weight--normal;
+}
+
+a {
+  color: $color-quaternary;
+  transition: $transition--primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-tertiary;
+  }
+}

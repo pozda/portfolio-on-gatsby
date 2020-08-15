@@ -1,0 +1,14 @@
+.project {
+  padding: 32px 16px;
+  box-sizing: border-box;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $color-senary;
+  }
+  &__link {
+    margin: 12px;
+    text-align: center;
+  }
+  .tool {
+    padding: 6px;
+  }
+}

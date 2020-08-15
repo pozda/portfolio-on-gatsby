@@ -1,0 +1,36 @@
+.loader {
+  display: flex;
+  border: 2px solid $color-primary;
+  padding: 2px;
+  margin: 1px;
+  justify-content: space-between;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  &__item {
+    display: inline-block;
+    background: $color-primary;
+    width: 10px;
+    height: 10px;
+    animation: 1000ms boxAnimation infinite;
+
+    &:nth-of-type(2){
+      animation-delay: 200ms;
+    }
+    &:nth-of-type(3){
+      animation-delay: 400ms;
+    }
+    &:nth-of-type(4){
+      animation-delay: 600ms;
+    }
+    &:nth-of-type(5){
+      animation-delay: 800ms;
+    }
+  }
+}
