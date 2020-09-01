@@ -26,7 +26,7 @@ module.exports = {
         short_name: `PWD`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#155799`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/assets/images/pozda-logo.png`, // This path is relative to the root of the site.
       },
