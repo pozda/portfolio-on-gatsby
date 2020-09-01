@@ -1,6 +1,11 @@
+import * as headerImg from '../assets/images/headerImg.jpg'
+import * as footerImg from '../assets/images/footerImg.jpg'
+import * as projectImg from '../assets/images/projectImg.jpg'
+import * as toolboxImg from '../assets/images/toolboxImg.jpg'
+
 export default {
-    projectImg: 'https://cdn.buttercms.com/T2SPQemkQgmUjmivdReI',
-    toolboxImg: 'https://cdn.buttercms.com/0jrAVOafQKmzjT9h9PyR',
-    headerImg: 'https://cdn.buttercms.com/f5yVTs3ITKeASFr6e8dO',
-    footerImg: 'https://cdn.buttercms.com/mOFmtkT3Tz2OnLhZtl1w'
+    projectImg,
+    toolboxImg,
+    headerImg,
+    footerImg
 }
