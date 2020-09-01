@@ -9,7 +9,8 @@ import {
     HeaderComponent, 
     FooterComponent,
     //LoadingComponent,
-    SectionTitleComponent
+    SectionTitleComponent,
+    SEOComponent
 } from '../ui/components/'
 import images from '../utils/images'
 import appConstants from '../utils/appConstants'
@@ -18,7 +19,8 @@ import '../ui/styles/Main.scss'
 const HomePage = ({pageContext: {data}}) => {
   const {aboutMe, projects, socialLinks, toolbox} = data
   return (
-    <div>
+    <>
+        <SEOComponent />
         <HeaderComponent image={images.headerImg}/>
         <Element name="aboutMe">
             <div className="container" id="aboutMe">
@@ -65,10 +67,8 @@ const HomePage = ({pageContext: {data}}) => {
             </div>
         </Element>
         <FooterComponent socialLinks={socialLinks}/>
-    </div>
+    </>
 )
 }
-  
-
 
 export default HomePage
