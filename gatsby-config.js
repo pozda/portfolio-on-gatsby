@@ -4,8 +4,7 @@ module.exports = {
     titleTemplate: "%s · Web Developer",
     description:
       "Frontend designer, developer and engineer on a way to become fullstack JS Web Developer",
-    url: "https://ivan-pozderac.from.hr", // No trailing slash allowed!
-    image: `${__dirname}/src/assets/images/headerImg.jpg`, // Path to your image you placed in the 'static' folder
+    url: "https://ivan-pozderac.from.hr",
     twitterUsername: "@pozda",
   },
   plugins: [
@@ -28,7 +27,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/assets/images/pozda-logo.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/pozda-logo-template.png`, 
       },
     },
     {

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
+import headerImg from '../../../assets/images/headerImg.jpg'
 
 const SEOComponent = ({ title, description, image, article }) => {
   const { pathname } = useLocation()
@@ -39,10 +40,9 @@ const SEOComponent = ({ title, description, image, article }) => {
         <meta property={'og:description'} content={seo.description} />
       )}
 
-      {seo.image && <meta property={'og:image'} content={seo.image} />}
+      { headerImg && <meta property={'og:image'} content={headerImg} /> }
 
       <meta name={'twitter:card'} content={'summary_large_image'} />
-
       {twitterUsername && (
         <meta name={'twitter:creator'} content={twitterUsername} />
       )}
@@ -63,14 +63,12 @@ export default SEOComponent
 SEOComponent.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.string,
   article: PropTypes.bool,
 }
 
 SEOComponent.defaultProps = {
   title: null,
   description: null,
-  image: null,
   article: false,
 }
 
@@ -82,7 +80,6 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
-        defaultImage: image
         twitterUsername
       }
     }
