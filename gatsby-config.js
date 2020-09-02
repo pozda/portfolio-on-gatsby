@@ -3,7 +3,7 @@ module.exports = {
     title: "Ivan Pozderac",
     titleTemplate: "%s · Web Developer",
     description:
-      "Frontend designer, developer and engineer on a way to become fullstack JS Web Developer",
+      "Frontend developer on a way to become fullstack JS Web Developer",
     url: "https://ivan-pozderac.from.hr",
     twitterUsername: "@pozda",
   },
