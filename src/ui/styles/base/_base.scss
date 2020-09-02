@@ -5,6 +5,7 @@ body {
   font-family: $font--text;
   background: white;
   color: $color-primary;
+  overflow-y: scroll;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $font--title;
