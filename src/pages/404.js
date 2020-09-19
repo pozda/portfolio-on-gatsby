@@ -17,6 +17,11 @@ const NotFoundPage = () => (
         We don't make mistakes just happy little accidents!<br />
         <small>- Bob Ross</small>
       </blockquote>
+      <h1>
+        Maybe you were searching for one of theese:
+      </h1>
+
+      {/* list of blog posts  */}
     </div>
   </>
   
