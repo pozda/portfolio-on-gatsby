@@ -2,13 +2,12 @@
 import React from 'react'
 import {Element} from 'react-scroll'
 import type {AboutMe, Project, Tool} from '../models'
-import { 
+import {
     AboutMeComponent, 
     ToolboxComponent, 
     ProjectComponent, 
     HeaderComponent, 
     FooterComponent,
-    //LoadingComponent,
     SectionTitleComponent,
     SEOComponent
 } from '../ui/components/'

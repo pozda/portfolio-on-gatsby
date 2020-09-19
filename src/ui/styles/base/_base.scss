@@ -22,3 +22,10 @@ a {
     outline: 0;
   }
 }
+
+blockquote {
+  border-left: 4px solid $color-tertiary;
+  padding: 0 $unit*2;
+  font-style: italic;
+  color: $color-quinary;
+}

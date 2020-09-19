@@ -4,7 +4,9 @@ import cx from 'classnames'
 import {Link} from 'react-scroll'
 
 type Props = {
-    image: string
+    image: string,
+    nonav?: boolean,
+    children?: any
 }
 
 type State = {
@@ -34,7 +36,7 @@ class Header extends React.Component<Props, State> {
             'header__navbar': true,
             'header__navbar--inverse': this.state.inverse
         })
-        const {image} = this.props
+        const {image, nonav = false, children} = this.props
         return (
             <header className="header" style={{backgroundImage: `url(${image})`}}>
                 <div className="container">
@@ -47,16 +49,19 @@ class Header extends React.Component<Props, State> {
                                         0v84a21 21 0 0 0 21-21V32zm31 0v63a21 21 0 0 0 22-21V32z"/>
                                 </svg>
                             </a>
-                            <nav className="header__navigation">
-                                <Link className="header__navigation__item" activeClass="active" to="aboutMe" spy={true}
-                                    smooth={true} duration={500}>About Me</Link>
-                                <Link className="header__navigation__item" activeClass="active" to="myToolbox"
-                                    spy={true} smooth={true} duration={500}>My Toolbox</Link>
-                                <Link className="header__navigation__item" activeClass="active" to="projects" spy={true}
-                                    smooth={true} duration={500}>Projects</Link>
-                            </nav>
+                            {!nonav &&
+                                <nav className="header__navigation">
+                                    <Link className="header__navigation__item" activeClass="active" to="aboutMe" spy={true}
+                                        smooth={true} duration={500}>About Me</Link>
+                                    <Link className="header__navigation__item" activeClass="active" to="myToolbox"
+                                        spy={true} smooth={true} duration={500}>My Toolbox</Link>
+                                    <Link className="header__navigation__item" activeClass="active" to="projects" spy={true}
+                                        smooth={true} duration={500}>Projects</Link>
+                                </nav>
+                            }
                         </div>
                     </div>
+                    {children}
                 </div>
                 <div className="triangle-border triangle-border--bottom triangle-border--large--top"></div>
             </header>
