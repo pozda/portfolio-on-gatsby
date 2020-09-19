@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeaderComponent } from '../ui/components/'
 import images from '../utils/images'
+import '../ui/styles/Main.scss'
 
 const NotFoundPage = () => (
   <>
