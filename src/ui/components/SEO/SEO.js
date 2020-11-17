@@ -50,10 +50,10 @@ const SEOComponent = ({ title, description, image, article }) => {
       {seo.title && <meta name={'twitter:title'} content={seo.title} />}
 
       {seo.description && (
-        <meta name={'twitter:description'} content={seo.image | seo.siteUrl + headerImg} />
+        <meta name={'twitter:description'} content={seo.description} />
       )}
 
-      {seo.image && <meta name={'twitter:image'} content={seo.} />}
+      {seo.image && <meta name={'twitter:image'} content={seo.image | seo.siteUrl + headerImg} />}
     </Helmet>
   )
 }
