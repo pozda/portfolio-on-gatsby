@@ -14,14 +14,13 @@ const SEOComponent = ({ title, description, image, article }) => {
     titleTemplate,
     defaultDescription,
     siteUrl,
-    defaultImage,
     twitterUsername,
   } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
+    image: `${siteUrl}${image || headerImg}`,
     url: `${siteUrl}${pathname}`,
   }
 
@@ -40,7 +39,7 @@ const SEOComponent = ({ title, description, image, article }) => {
         <meta property={'og:description'} content={seo.description} />
       )}
 
-      { headerImg && <meta property={'og:image'} content={seo.url + headerImg} /> }
+      { headerImg && <meta property={'og:image'} content={seo.image} /> }
 
       <meta name={'twitter:card'} content={'summary_large_image'} />
       {twitterUsername && (
@@ -53,7 +52,7 @@ const SEOComponent = ({ title, description, image, article }) => {
         <meta name={'twitter:description'} content={seo.description} />
       )}
 
-      {seo.image && <meta name={'twitter:image'} content={seo.image | seo.url + headerImg} />}
+      {seo.image && <meta name={'twitter:image'} content={seo.image} />}
     </Helmet>
   )
 }
