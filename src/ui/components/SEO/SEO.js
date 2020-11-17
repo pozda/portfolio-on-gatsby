@@ -40,7 +40,7 @@ const SEOComponent = ({ title, description, image, article }) => {
         <meta property={'og:description'} content={seo.description} />
       )}
 
-      { headerImg && <meta property={'og:image'} content={headerImg} /> }
+      { headerImg && <meta property={'og:image'} content={seo.siteUrl + headerImg} /> }
 
       <meta name={'twitter:card'} content={'summary_large_image'} />
       {twitterUsername && (
@@ -50,10 +50,10 @@ const SEOComponent = ({ title, description, image, article }) => {
       {seo.title && <meta name={'twitter:title'} content={seo.title} />}
 
       {seo.description && (
-        <meta name={'twitter:description'} content={seo.description} />
+        <meta name={'twitter:description'} content={seo.image | seo.siteUrl + headerImg} />
       )}
 
-      {seo.image && <meta name={'twitter:image'} content={seo.image} />}
+      {seo.image && <meta name={'twitter:image'} content={seo.} />}
     </Helmet>
   )
 }
