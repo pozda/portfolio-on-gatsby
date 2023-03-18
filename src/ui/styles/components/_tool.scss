@@ -27,6 +27,16 @@
       fill: $color-css3
     }
   }
+  &.couchdb {
+    &:hover .icon {
+      fill: $color-couchdb
+    }
+  }
+  &.cypress {
+    &:hover .icon {
+      fill: $color-cypress
+    }
+  }
   &.git {
     &:hover .icon {
       fill: $color-git
