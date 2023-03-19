@@ -45,13 +45,16 @@ const HomePage = ({pageContext: {data}}) => {
                             <ToolboxComponent icon={tool.slug} tool={tool} key={tool.name + tool.level}/>
                         ))}
                     </div>
-                    <div className="section-part-wrapper">
-                        <h1>Still learning</h1>
-                        {toolbox.map((tool: Tool) => (
-                            tool.level === appConstants.tools.LEARNING &&
-                            <ToolboxComponent icon={tool.slug} tool={tool} key={tool.name + tool.level}/>
-                        ))}
-                    </div>
+                    {
+                        // <div className="section-part-wrapper">
+                        //     <h1>Still learning</h1>
+                        //     {toolbox.map((tool: Tool) => (
+                        //         tool.level === appConstants.tools.LEARNING &&
+                        //         <ToolboxComponent icon={tool.slug} tool={tool} key={tool.name + tool.level}/>
+                        //     ))}
+                        // </div>
+                    }
+                    
                 </section>
             </div>
         </Element>
