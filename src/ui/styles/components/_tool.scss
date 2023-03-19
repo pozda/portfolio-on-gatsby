@@ -87,6 +87,11 @@
       fill: $color-nodejs
     }
   }
+  &.nextjs {
+    &:hover .icon {
+      fill: $color-nextjs
+    }
+  }
   &.buttercms {
     &:hover .icon {
       fill: $color-butterCMS
