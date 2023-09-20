@@ -1,7 +1,7 @@
 import React from 'react'
 import { HeaderComponent } from '../ui/components/'
 import images from '../utils/images'
-import myCV from '..utils/myCV'
+import myCV from '../utils/myCV'
 import '../ui/styles/Main.scss'
 
 const NotFoundPage = () => (
