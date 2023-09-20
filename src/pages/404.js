@@ -24,7 +24,7 @@ const NotFoundPage = () => (
       <p>
         You can go to the <a href="/" title="Home Page">home page</a>.
       </p>
-      <p>If you came here looking for <a href={myCV} title="My portfolio/CV">my CV, you can download it here!</a></p>
+      <p>If you came here looking for <a href="https://drive.google.com/file/d/1yMII2TsLfGn6WisV5jlIFtJUoBsb27eU/view" target="_blank" title="My portfolio/CV">my CV, you can download it here!</a></p>
       {/* list of blog posts  */}
     </div>
   </>
