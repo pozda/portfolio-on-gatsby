@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeaderComponent } from '../ui/components/'
 import images from '../utils/images'
+import myCV from '..utils/myCV'
 import '../ui/styles/Main.scss'
 
 const NotFoundPage = () => (
@@ -18,9 +19,12 @@ const NotFoundPage = () => (
         <small>- Bob Ross</small>
       </blockquote>
       <h1>
-        Maybe you were searching for one of theese:
+        This page is not found! 
       </h1>
-
+      <p>
+        You can go to the <a href="/" title="Home Page">home page</a>.
+      </p>
+      <p>If you came here looking for <a href={myCV} title="My portfolio/CV">my CV, you can download it here!</a></p>
       {/* list of blog posts  */}
     </div>
   </>
